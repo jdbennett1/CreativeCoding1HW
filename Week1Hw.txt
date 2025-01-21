@@ -1,0 +1,13 @@
+The difference between a CLI and GUI is the type of interaction the user will experience. With a 
+CLI or Command Line Interface the user puts in system specific commands in order to interact 
+with the operating system. With a GUI or Graphical User Interface the user is able interact 
+with the operating system using a graphical interface. When dealing with more naive users the 
+graphical interface makes it much easier to understand the process of pushing, pulling and 
+merging branches. The GUI provides graphics and menus which makes it easier to observe and
+operate multiple files at the same time. The CLI however is much more simple because for a
+user to use the CLI they only need a keyboard whereas with a GUI a user needs a mouse and
+keyboard. The CLI also uses less memory and is typically faster than the GUI. The simplicity of
+the CLI does provide a challenge for a naive user when it comes to learning the system specific
+commands. I remember when I first started learning how to use the CLI and the system specific
+commands are pretty vague and not self explanatory. Had I been trying to learn it on my own
+and not in a CSCI course it would have probably taken me a lot longer to understand.     
