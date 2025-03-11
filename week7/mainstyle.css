@@ -1,0 +1,53 @@
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  body
+  {
+    font-family: "Lucida Console", "Courier New", monospace;
+    text-size-adjust: 5; 
+    background-color: rgb(143, 200, 218);
+  }
+
+  h3
+  {
+    text-align:"center";
+  }
+
+  p.title
+  {
+    font-size: large;
+  }
+
+  #schedule_header
+  {
+    font-size: xx-large;
+  }
+
+  #tabletitle
+  {
+    font-size: +25;
+  }
+
+  

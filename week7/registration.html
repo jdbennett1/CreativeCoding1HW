@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+</head>
+
+
+<style>body {margin: 0 10%;  font-family: sans-serif; font-size: medium; }h1 {  text-align: center;  font-family: sans-serif;
+	font-weight: bold; font-size: larger;  text-transform: uppercase;   margin-top: 30px; }
+	 h2 {  color: #d1633c; font-size: large; font-family: sans-serif; font-size: x-large;} h3 {font-size: x-large;}</style>
+<body>
+<form>
+<h1>Camper Registration Information</h1><br>
+<label for="first name">First Name:</label><br>
+<input type="text"><br><br>
+
+<label for="last name">Last Name:</label><br>
+<input type="text">
+
+<p>Campers age:<br> <input type="text" list="age" name="camper"></p> <datalist id="age">  <option value="8"> <option value="9">  <option value="10">  <option value="11">  <option value="12"> <option value="13"> <option value="14"> <option value="15"></datalist>
+
+parent email:<br>
+<input type="email"><br><br>
+
+parent phone:<br>
+<input type="tel"><br><br>
+
+Please list any and all allergies:<br>
+<textarea name="allergies" rows="5" cols="28">gluten, peanuts, etc</textarea>
+
+<p>t-shirt size:</p>
+<ol>
+	<li><input type="radio" name="size" value="small" checked> small</li>
+	<li><input type="radio" name="size" value="medium"> medium</li>
+	<li><input type="radio" name="size" value="large"> large</li>
+	<li><input type="radio" name="size" value="x-large"> x-large</li>
+	<li><input type="radio" name="size" value="xx-large"> xx-large</li>
+</ol>
+
+<p>What activites interest you?</p>
+<ul>
+	<li><input type="checkbox" name="activity" value="pizza dough rolling"> pizza dough rolling</li>
+	<li><input type="checkbox" name="activity" value="pasta making"> pasta making</li>
+	<li><input type="checkbox" name="activity" value="sauce making"> sauce making</li>
+	<li><input type="checkbox" name="activity" value="knife work"> knife work</li>
+	<li><input type="checkbox" name="activity" value="grilling"> grilling</li>
+	<li><input type="checkbox" name="activity" value="sauting"> sauting</li>
+</ul>
+
+Submit a photo: <input type="file"><br>
+
+<br>
+<input type="Submit" value="Register Now" onclick="alert('Thanks for registering!')">
+</form>
+
+<center><button type = "button"><font size="+2"><a href="index.html">Back</a></font></button></center>
+</body>
