@@ -1,0 +1,67 @@
+</style>
+
+<title>Functions</title>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="./mainstyle.css">
+</head> 
+<ul>
+	<li><a href="index.html">Culinary Extraordinaire</a></li>
+	<li><a href="about.html">About</a></li>
+	<li><a href="registration.html">Registration</a></li>
+	<li><a href="contact.html">Contact us</a></li>
+  </ul>
+<script>
+    function getData() {
+      var name = document.getElementById("txtName").value;
+      var email = document.getElementById("txtEmail").value;
+      var term  = document.getElementById("radterma").value;
+      if (name == ""){
+        document.getElementById("txtName").style.borderColor = 'Red';
+        document.getElementById("txtName").focus();
+        window.alert("missing fields")
+      }
+      if (email == ""){
+        document.getElementById("txtEmail").style.borderColor = 'Red';
+        document.getElementById("txtEmail").focus();
+        window.alert("missing fields")
+      }
+      if (term == ""){
+        document.getElementById("rad").style.borderColor = 'Red';
+        document.getElementById("txtName").focus();
+        window.alert("missing fields")
+      }
+      
+    }
+</script>
+</head>
+
+<body>
+
+    <form>
+    <table>
+        <tr>
+            <p>TERMS AND AGREEMENTS <br>
+                this is a generic term and<br> 
+                agreements you must agree to, <br> 
+                in order to contact us
+            </p>
+            <td><input type="radio" id="radterma" required>AGREE</td>
+            <td><input type="radio" id="radtermb" >DISAGREE</td>
+          </tr>  
+      <tr>
+        <td>Name</td>
+        <td><input type="text" id="txtName" required></td>
+      </tr>
+      <tr>
+        <td>Email</td>
+        <td><input type="text" id="txtEmail" required></td>
+      </tr>
+      
+      <tr>
+        <td colspan="2"><button id="btnSubmit" onClick="getData();">Submit</button></td>
+      </tr>
+    </table>
+    <div id="finalResult"></div>
+    </form>
+  </body>
