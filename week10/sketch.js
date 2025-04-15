@@ -46,7 +46,7 @@ function draw() {
       movement *= -1;
     }
     x1 += movement;
-  if (x2 >= 400 || x2 <= 0) {
+    if (x2 >= 400 || x2 <= 0) {
       movement *= -1;
     }
     x2 += movement;
