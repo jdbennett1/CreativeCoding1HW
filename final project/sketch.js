@@ -1,37 +1,26 @@
+let ball;
+
 function setup() {
-  new Canvas(windowWidth, windowHeight);
+  createCanvas(windowWidth, windowHeight); // use p5.js canvas directly
   ball = new Sprite();
-
-  textSize(24);
-  textAlign(CENTER, CENTER);
-  fill(255);
-
-  canvas.mousePressed(() => {
-    canvas.canvas.focus();
-  });
 }
 
 function draw() {
   background('black');
 
-  if (!focused) {
-    text('Click to activate controls', width / 2, height / 2);
-    return;
-  }
-
   ball.vel.x = 0;
   ball.vel.y = 0;
 
-  if (kb.pressing('left')) {
+  if (keyIsDown(LEFT_ARROW)) {
     ball.vel.x = -5;
   }
-  if (kb.pressing('right')) {
+  if (keyIsDown(RIGHT_ARROW)) {
     ball.vel.x = 5;
   }
-  if (kb.pressing('up')) {
+  if (keyIsDown(UP_ARROW)) {
     ball.vel.y = -5;
   }
-  if (kb.pressing('down')) {
+  if (keyIsDown(DOWN_ARROW)) {
     ball.vel.y = 5;
   }
 
