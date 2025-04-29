@@ -1,8 +1,11 @@
-let ball;
-
 function setup() {
-  new Canvas(windowWidth, windowHeight); // if you're using p5play
+  new Canvas(windowWidth, windowHeight);
   ball = new Sprite();
+
+  textSize(24);
+  textAlign(CENTER, CENTER);
+  fill(255);
+
   canvas.mousePressed(() => {
     canvas.canvas.focus();
   });
@@ -10,12 +13,15 @@ function setup() {
 
 function draw() {
   background('black');
-  
-  // Reset velocity
+
+  if (!focused) {
+    text('Click to activate controls', width / 2, height / 2);
+    return;
+  }
+
   ball.vel.x = 0;
   ball.vel.y = 0;
 
-  // Handle input
   if (kb.pressing('left')) {
     ball.vel.x = -5;
   }
@@ -29,5 +35,5 @@ function draw() {
     ball.vel.y = 5;
   }
 
-  drawSprites(); // IMPORTANT: draw all sprites
+  drawSprites();
 }
