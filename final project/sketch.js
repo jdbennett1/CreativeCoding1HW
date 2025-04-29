@@ -3,6 +3,9 @@ let ball;
 function setup() {
   new Canvas(windowWidth, windowHeight); // if you're using p5play
   ball = new Sprite();
+  canvas.mousePressed(() => {
+    canvas.canvas.focus();
+  });
 }
 
 function draw() {
